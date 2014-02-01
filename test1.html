@@ -40,14 +40,15 @@ div { padding: 10px; }
   };
 
   // Load the SDK Asynchronously
-  (function(d, s, id){
+/*   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
      js = d.createElement(s); js.id = id;
      js.src = "//connect.facebook.net/en_US/all.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-
+ */
+ 
   /*
    * This function makes a call to the og.likes API.  The
    * object argument is the object you like.  Other types
@@ -95,6 +96,8 @@ div { padding: 10px; }
     );
   }
 </script>
+
+<script src="//connect.facebook.net/en_US/all.js"></script>
 
 <!--
   Login Button
